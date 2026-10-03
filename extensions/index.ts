@@ -36,7 +36,7 @@ export default function (pi: ExtensionAPI) {
 			ctx.ui.setStatus(STATUS_ID, undefined);
 			return;
 		}
-		ctx.ui.setStatus(STATUS_ID, `\u001b[999C${ctx.ui.theme.fg("accent", "◢")}`);
+		ctx.ui.setStatus(STATUS_ID, ctx.ui.theme.fg("accent", "◢"));
 	};
 
 	const silentRefresh = (ctx: ExtensionContext): void => {
